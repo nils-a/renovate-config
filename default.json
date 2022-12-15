@@ -6,6 +6,21 @@
   "dependencyDashboard": false,
   "commitMessagePrefix": "(maint)",
   "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true
+  },
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["actions/"],
+      "labels": ["build"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    }
+  ],
   "cake": {
     "addLabels": ["cake", "build"]
   },
